@@ -14,7 +14,7 @@ def max_diff(numbers, version = 1):
         result = 0
         for x in numbers:
             for y in numbers:
-                result = mmax(result, abs(x - y))
+                result = max(result, abs(x - y))
         return result
     elif version == 2:
         numbers = sorted(numbers)
