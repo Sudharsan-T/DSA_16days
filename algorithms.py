@@ -21,3 +21,10 @@ def max_diff(numbers, version = 1):
         return numbers[-1] - numbers[0]
     elif version == 3:
         return max(numbers) - min(numbers) #efficient way
+    
+def count_even(numbers):
+    result = 0
+    for x in numbers:
+        if x % 2 == 0:
+            result += 1
+    return result
